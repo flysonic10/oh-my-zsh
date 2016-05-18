@@ -45,4 +45,4 @@ alias hbm='hub browse indiegogo/monorail'
 alias hbn='hub browse indiegogo/ng-gogo'
 alias hbh='hub browse indiegogo/harvest'
 
-alias del='git branch -D $1 && git push origin :$1'
+del() { git push origin :"$1"; }
